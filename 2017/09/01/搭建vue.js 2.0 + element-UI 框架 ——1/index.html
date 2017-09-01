@@ -74,7 +74,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="spring boot,技术,框架," />
+  <meta name="keywords" content="技术,框架,vue,element UI," />
 
 
 
@@ -90,19 +90,19 @@
 
 
 
-<meta name="description" content="作用：对项目中异常进行统一处理 步骤:  新建异常控制类GlobalExceptionHandler 编写除零异常ZeroException  @ControllerAdvice 类注解，作用于整个Spring工程，ControllerAdvice注解定义了一个全局的异常处理器，将作用在所有注解了@RequestMapping的控制器的方法上 @ExceptionHandler(value=Exc">
-<meta name="keywords" content="spring boot,技术,框架">
+<meta name="description" content="前提： 1.安装了node.js 2.对npm进行换源1npm install cnpm -g --registry=https://registry.npm.taobao.org 3.安装全局 vue-cli 脚手架 1npm install --global vue-cli 创建基于webpack模板的新项目 在项目目录下 右键在此打开命令窗口 vue init webpack my-proj">
+<meta name="keywords" content="技术,框架,vue,element UI">
 <meta property="og:type" content="article">
-<meta property="og:title" content="spring boot起步——3.全局异常控制">
-<meta property="og:url" content="http://yoursite.com/2017/08/18/spring boot起步——3.全局异常控制/index.html">
+<meta property="og:title" content="搭建vue.js 2.0 + element-UI 框架 ——1">
+<meta property="og:url" content="http://yoursite.com/2017/09/01/搭建vue.js 2.0 + element-UI 框架 ——1/index.html">
 <meta property="og:site_name" content="Winona">
-<meta property="og:description" content="作用：对项目中异常进行统一处理 步骤:  新建异常控制类GlobalExceptionHandler 编写除零异常ZeroException  @ControllerAdvice 类注解，作用于整个Spring工程，ControllerAdvice注解定义了一个全局的异常处理器，将作用在所有注解了@RequestMapping的控制器的方法上 @ExceptionHandler(value=Exc">
-<meta property="og:image" content="https://segmentfault.com/img/bVCtZU?w=1335&h=424">
-<meta property="og:updated_time" content="2017-09-01T08:21:04.753Z">
+<meta property="og:description" content="前提： 1.安装了node.js 2.对npm进行换源1npm install cnpm -g --registry=https://registry.npm.taobao.org 3.安装全局 vue-cli 脚手架 1npm install --global vue-cli 创建基于webpack模板的新项目 在项目目录下 右键在此打开命令窗口 vue init webpack my-proj">
+<meta property="og:image" content="http://ovle9bdip.bkt.clouddn.com/psb.png">
+<meta property="og:updated_time" content="2017-09-01T08:43:14.738Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="spring boot起步——3.全局异常控制">
-<meta name="twitter:description" content="作用：对项目中异常进行统一处理 步骤:  新建异常控制类GlobalExceptionHandler 编写除零异常ZeroException  @ControllerAdvice 类注解，作用于整个Spring工程，ControllerAdvice注解定义了一个全局的异常处理器，将作用在所有注解了@RequestMapping的控制器的方法上 @ExceptionHandler(value=Exc">
-<meta name="twitter:image" content="https://segmentfault.com/img/bVCtZU?w=1335&h=424">
+<meta name="twitter:title" content="搭建vue.js 2.0 + element-UI 框架 ——1">
+<meta name="twitter:description" content="前提： 1.安装了node.js 2.对npm进行换源1npm install cnpm -g --registry=https://registry.npm.taobao.org 3.安装全局 vue-cli 脚手架 1npm install --global vue-cli 创建基于webpack模板的新项目 在项目目录下 右键在此打开命令窗口 vue init webpack my-proj">
+<meta name="twitter:image" content="http://ovle9bdip.bkt.clouddn.com/psb.png">
 
 
 
@@ -130,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/08/18/spring boot起步——3.全局异常控制/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/09/01/搭建vue.js 2.0 + element-UI 框架 ——1/"/>
 
 
 
 
 
-  <title>spring boot起步——3.全局异常控制 | Winona</title>
+  <title>搭建vue.js 2.0 + element-UI 框架 ——1 | Winona</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -266,7 +266,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/spring boot起步——3.全局异常控制/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/01/搭建vue.js 2.0 + element-UI 框架 ——1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Winona">
@@ -283,7 +283,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">spring boot起步——3.全局异常控制</h1>
+          <h1 class="post-title" itemprop="name headline">搭建vue.js 2.0 + element-UI 框架 ——1</h1>
         
 
         <div class="post-meta">
@@ -295,8 +295,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-18T22:10:05+08:00">
-                2017-08-18
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-01T16:27:10+08:00">
+                2017-09-01
               </time>
             
 
@@ -340,8 +340,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/技术/框架/spring-boot/" itemprop="url" rel="index">
-                    <span itemprop="name">spring boot</span>
+                  <a href="/categories/技术/框架/vue/" itemprop="url" rel="index">
+                    <span itemprop="name">vue</span>
                   </a>
                 </span>
 
@@ -374,19 +374,31 @@
       
 
       
-        <p>作用：对项目中异常进行统一处理</p>
-<p>步骤:</p>
-<ol>
-<li>新建异常控制类GlobalExceptionHandler</li>
-<li>编写除零异常ZeroException</li>
+        <p>前提：</p>
+<p>1.安装了node.js</p>
+<p>2.对npm进行换源<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install cnpm -g --registry=https://registry.npm.taobao.org</div></pre></td></tr></table></figure></p>
+<p>3.安装全局 vue-cli 脚手架</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --global vue-cli</div></pre></td></tr></table></figure>
+<h3 id="创建基于webpack模板的新项目"><a href="#创建基于webpack模板的新项目" class="headerlink" title="创建基于webpack模板的新项目"></a>创建基于webpack模板的新项目</h3><ol>
+<li>在项目目录下 右键在此打开命令窗口</li>
+<li>vue init webpack my-project (项目名)</li>
+<li>回车默认选项</li>
+<li>cd my-project</li>
+<li>cnpm install</li>
+<li>cnpm run dev<a id="more"></a>
+这里默认安装了vue-router</li>
 </ol>
-<p>@ControllerAdvice 类注解，作用于整个Spring工程，ControllerAdvice注解定义了一个全局的异常处理器，将作用在所有注解了@RequestMapping的控制器的方法上</p>
-<p>@ExceptionHandler(value=Exception.class)方法注解，作用于Controller级别，为Controller定义一个全局控制的异常处理器<br><a id="more"></a><br>GlobalExceptionHandler<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> com.test.mytest.exception;</div><div class="line"></div><div class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletRequest;</div><div class="line"></div><div class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.ControllerAdvice;</div><div class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.ExceptionHandler;</div><div class="line"></div><div class="line"><span class="meta">@ControllerAdvice</span> <span class="comment">//注册全局的异常处理器</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">GlobalExceptionHandler</span> </span>&#123;</div><div class="line">	</div><div class="line">	<span class="meta">@ExceptionHandler</span>(value = Exception.class) <span class="comment">//注册controller的一个异常处理器，可以精确处理某类异常</span></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">defaultErrorHandler</span><span class="params">(HttpServletRequest req,Exception e)</span></span>&#123;</div><div class="line">		e.printStackTrace();</div><div class="line">		System.out.println(<span class="string">"globalExceptionHandler.defaultErrorHandler"</span>);</div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>ZeroException</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> com.test.mytest.web;</div><div class="line"></div><div class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.RequestMapping;</div><div class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.RestController;</div><div class="line"></div><div class="line"><span class="meta">@RestController</span></div><div class="line"><span class="meta">@RequestMapping</span>(<span class="string">"/zero"</span>)</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ZeroException</span> </span>&#123;</div><div class="line">	<span class="meta">@RequestMapping</span>(<span class="string">"/getException"</span>)</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getException</span><span class="params">()</span></span>&#123;</div><div class="line">		<span class="keyword">return</span> <span class="number">100</span>/<span class="number">0</span>;<span class="comment">//除零异常</span></div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>访问页面，控制台打印错误和调用方法，页面上不再显示Spring的错误页面</p>
-<p>spring的内部默认提供了一个全局的Handler来处理Http错误，并且将它映射为/error，当发生HTTP错误，例如404，内部会将页面重定向到/error</p>
-<p><img src="https://segmentfault.com/img/bVCtZU?w=1335&amp;h=424" alt="image"></p>
+<h3 id="需要安装的环境"><a href="#需要安装的环境" class="headerlink" title="需要安装的环境"></a>需要安装的环境</h3><ol>
+<li>cnpm install sass-loader –save-dev 加载sass编译为css</li>
+<li>cnpm install gulp-sass</li>
+<li>cnpm install –save axios   一个基于Promise 用于浏览器和 nodejs 的 HTTP 客户端</li>
+<li>cnpm install element-ui -S</li>
+<li>cnpm install vuex –save</li>
+</ol>
+<h3 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h3><p>安装的依赖 现在如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&quot;dependencies&quot;: &#123;</div><div class="line">  &quot;axios&quot;: &quot;^0.16.2&quot;,</div><div class="line">  &quot;element-ui&quot;: &quot;^1.4.3&quot;,</div><div class="line">  &quot;vue&quot;: &quot;^2.4.2&quot;,</div><div class="line">  &quot;vue-router&quot;: &quot;^2.7.0&quot;,</div><div class="line">  &quot;vuex&quot;: &quot;^2.4.0&quot;</div><div class="line">&#125;,</div></pre></td></tr></table></figure></p>
+<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>在app.vue中加入element UI的时间插件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div></pre></td><td class="code"><pre><div class="line">&lt;template&gt;</div><div class="line">  &lt;div id=&quot;app&quot;&gt;</div><div class="line">    &lt;img src=&quot;./assets/logo.png&quot;&gt;</div><div class="line">    &lt;router-view&gt;&lt;/router-view&gt;</div><div class="line">    &lt;el-time-select</div><div class="line">      v-model=&quot;value1&quot;</div><div class="line">      :picker-options=&quot;&#123;</div><div class="line">        start: &apos;08:30&apos;,</div><div class="line">        step: &apos;00:15&apos;,</div><div class="line">        end: &apos;18:30&apos;</div><div class="line">      &#125;&quot;</div><div class="line">      placeholder=&quot;选择时间&quot;&gt;</div><div class="line">    &lt;/el-time-select&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">&lt;/template&gt;</div><div class="line"></div><div class="line">&lt;script&gt;</div><div class="line">import Vue from &apos;vue&apos;</div><div class="line">import ElementUI from &apos;element-ui&apos;</div><div class="line">import &apos;element-ui/lib/theme-default/index.css&apos;</div><div class="line"></div><div class="line">Vue.use(ElementUI)</div><div class="line">export default &#123;</div><div class="line">  name: &apos;app&apos;,</div><div class="line">  data () &#123;</div><div class="line">    return &#123;</div><div class="line">      value1: &apos;&apos;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">&lt;/script&gt;</div><div class="line"></div><div class="line">&lt;style&gt;</div><div class="line">#app &#123;</div><div class="line">  font-family: &apos;Avenir&apos;, Helvetica, Arial, sans-serif;</div><div class="line">  -webkit-font-smoothing: antialiased;</div><div class="line">  -moz-osx-font-smoothing: grayscale;</div><div class="line">  text-align: center;</div><div class="line">  color: #2c3e50;</div><div class="line">  margin-top: 60px;</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure></p>
+<p>打开浏览器，搭建成功<br><img src="http://ovle9bdip.bkt.clouddn.com/psb.png" alt="image"></p>
+<h3 id="eslint-风格"><a href="#eslint-风格" class="headerlink" title="eslint 风格"></a>eslint 风格</h3><p>eslint代码规范精确到空格，去掉可以在build文件夹中，找到webpack.base.conf.js注释掉rules中eslint的代码<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// &#123;</span></div><div class="line"><span class="comment">//   test: /\.(js|vue)$/,</span></div><div class="line"><span class="comment">//   loader: 'eslint-loader',</span></div><div class="line"><span class="comment">//   enforce: 'pre',</span></div><div class="line"><span class="comment">//   include: [resolve('src'), resolve('test')],</span></div><div class="line"><span class="comment">//   options: &#123;</span></div><div class="line"><span class="comment">//     formatter: require('eslint-friendly-formatter')</span></div><div class="line"><span class="comment">//   &#125;</span></div><div class="line"><span class="comment">// &#125;,</span></div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -416,11 +428,13 @@
       
         <div class="post-tags">
           
-            <a href="/tags/spring-boot/" rel="tag"># spring boot</a>
-          
             <a href="/tags/技术/" rel="tag"># 技术</a>
           
             <a href="/tags/框架/" rel="tag"># 框架</a>
+          
+            <a href="/tags/vue/" rel="tag"># vue</a>
+          
+            <a href="/tags/element-UI/" rel="tag"># element UI</a>
           
         </div>
       
@@ -433,8 +447,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/18/spring boot起步——2.返回json数据/" rel="next" title="spring boot起步——2.返回json数据">
-                <i class="fa fa-chevron-left"></i> spring boot起步——2.返回json数据
+              <a href="/2017/08/20/spring boot 起步——6.设置logback日志/" rel="next" title="spring boot起步——6.设置logback日志">
+                <i class="fa fa-chevron-left"></i> spring boot起步——6.设置logback日志
               </a>
             
           </div>
@@ -443,8 +457,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/08/19/spring boot起步——4.连接MySQL集成mybatis xml方式/" rel="prev" title="spring boot起步——4.连接MySQL集成mybatis xml方式">
-                spring boot起步——4.连接MySQL集成mybatis xml方式 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/09/01/搭建vue.js 2.0 + element-UI 框架 ——2 vue-router/" rel="prev" title="搭建vue.js 2.0 + element-UI 框架 ——2 vue-router">
+                搭建vue.js 2.0 + element-UI 框架 ——2 vue-router <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -492,8 +506,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avator.jpg"
@@ -555,6 +578,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建基于webpack模板的新项目"><span class="nav-number">1.</span> <span class="nav-text">创建基于webpack模板的新项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#需要安装的环境"><span class="nav-number">2.</span> <span class="nav-text">需要安装的环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#package-json"><span class="nav-number">3.</span> <span class="nav-text">package.json</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试"><span class="nav-number">4.</span> <span class="nav-text">测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#eslint-风格"><span class="nav-number">5.</span> <span class="nav-text">eslint 风格</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
