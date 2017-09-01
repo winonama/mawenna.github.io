@@ -97,12 +97,10 @@
 <meta property="og:url" content="http://yoursite.com/2017/08/18/spring boot起步——3.全局异常控制/index.html">
 <meta property="og:site_name" content="Winona">
 <meta property="og:description" content="作用：对项目中异常进行统一处理 步骤:  新建异常控制类GlobalExceptionHandler 编写除零异常ZeroException  @ControllerAdvice 类注解，作用于整个Spring工程，ControllerAdvice注解定义了一个全局的异常处理器，将作用在所有注解了@RequestMapping的控制器的方法上 @ExceptionHandler(value=Exc">
-<meta property="og:image" content="https://segmentfault.com/img/bVCtZU?w=1335&h=424">
-<meta property="og:updated_time" content="2017-09-01T08:21:04.753Z">
+<meta property="og:updated_time" content="2017-09-01T09:51:12.404Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="spring boot起步——3.全局异常控制">
 <meta name="twitter:description" content="作用：对项目中异常进行统一处理 步骤:  新建异常控制类GlobalExceptionHandler 编写除零异常ZeroException  @ControllerAdvice 类注解，作用于整个Spring工程，ControllerAdvice注解定义了一个全局的异常处理器，将作用在所有注解了@RequestMapping的控制器的方法上 @ExceptionHandler(value=Exc">
-<meta name="twitter:image" content="https://segmentfault.com/img/bVCtZU?w=1335&h=424">
 
 
 
@@ -386,7 +384,6 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> com.test.mytest.web;</div><div class="line"></div><div class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.RequestMapping;</div><div class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.RestController;</div><div class="line"></div><div class="line"><span class="meta">@RestController</span></div><div class="line"><span class="meta">@RequestMapping</span>(<span class="string">"/zero"</span>)</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ZeroException</span> </span>&#123;</div><div class="line">	<span class="meta">@RequestMapping</span>(<span class="string">"/getException"</span>)</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getException</span><span class="params">()</span></span>&#123;</div><div class="line">		<span class="keyword">return</span> <span class="number">100</span>/<span class="number">0</span>;<span class="comment">//除零异常</span></div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>访问页面，控制台打印错误和调用方法，页面上不再显示Spring的错误页面</p>
 <p>spring的内部默认提供了一个全局的Handler来处理Http错误，并且将它映射为/error，当发生HTTP错误，例如404，内部会将页面重定向到/error</p>
-<p><img src="https://segmentfault.com/img/bVCtZU?w=1335&amp;h=424" alt="image"></p>
 
       
     </div>
