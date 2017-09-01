@@ -97,12 +97,12 @@
 <meta property="og:url" content="http://yoursite.com/2017/09/01/搭建vue.js 2.0 + element-UI 框架 ——2 vue-router/index.html">
 <meta property="og:site_name" content="Winona">
 <meta property="og:description" content="前提：安装了vue-router(已自动安装过) 项目结构：">
-<meta property="og:image" content="http://a3.qpic.cn/psb?/V10LMEz02smJq8/tLItKMefOal5v2UtgK1zt6KKL5Ssn.tXiryduIByroc!/b/dBkBAAAAAAAA&bo=SQHtAAAAAAARB5U!&rf=viewer_4">
-<meta property="og:updated_time" content="2017-09-01T08:29:10.095Z">
+<meta property="og:image" content="http://ovle9bdip.bkt.clouddn.com/2017-08-31_181120.jpg">
+<meta property="og:updated_time" content="2017-09-01T08:37:53.352Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建vue.js 2.0 + element-UI 框架 ——2 vue-router">
 <meta name="twitter:description" content="前提：安装了vue-router(已自动安装过) 项目结构：">
-<meta name="twitter:image" content="http://a3.qpic.cn/psb?/V10LMEz02smJq8/tLItKMefOal5v2UtgK1zt6KKL5Ssn.tXiryduIByroc!/b/dBkBAAAAAAAA&bo=SQHtAAAAAAARB5U!&rf=viewer_4">
+<meta name="twitter:image" content="http://ovle9bdip.bkt.clouddn.com/2017-08-31_181120.jpg">
 
 
 
@@ -375,7 +375,7 @@
 
       
         <h2 id="前提："><a href="#前提：" class="headerlink" title="前提："></a>前提：</h2><p>安装了vue-router(已自动安装过)</p>
-<h2 id="项目结构："><a href="#项目结构：" class="headerlink" title="项目结构："></a>项目结构：</h2><p><img src="http://a3.qpic.cn/psb?/V10LMEz02smJq8/tLItKMefOal5v2UtgK1zt6KKL5Ssn.tXiryduIByroc!/b/dBkBAAAAAAAA&amp;bo=SQHtAAAAAAARB5U!&amp;rf=viewer_4" alt="image"><br><a id="more"></a></p>
+<h2 id="项目结构："><a href="#项目结构：" class="headerlink" title="项目结构："></a>项目结构：</h2><p><img src="http://ovle9bdip.bkt.clouddn.com/2017-08-31_181120.jpg" alt="image"><br><a id="more"></a></p>
 <h2 id="main-js"><a href="#main-js" class="headerlink" title="main.js"></a>main.js</h2><p>引入vue-router<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">import Vue from &apos;vue&apos;</div><div class="line">import App from &apos;./App&apos;</div><div class="line">import VueRouter from &apos;vue-router&apos;</div><div class="line">import ElementUI from &apos;element-ui&apos;</div><div class="line">import &apos;element-ui/lib/theme-default/index.css&apos;</div><div class="line">import routeConfig from &apos;./router&apos;</div><div class="line"></div><div class="line">Vue.use(ElementUI)</div><div class="line">Vue.use(VueRouter)</div><div class="line">const router = new VueRouter(&#123;</div><div class="line">	routes: routeConfig</div><div class="line">&#125;); </div><div class="line"></div><div class="line">/* eslint-disable no-new */</div><div class="line">new Vue(&#123;</div><div class="line">  router,</div><div class="line">  el: &quot;#app&quot;,</div><div class="line">  render: h =&gt; h(App)</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
 <h2 id="App-vue"><a href="#App-vue" class="headerlink" title="App.vue"></a>App.vue</h2><p>项目启动时默认进入app.vue界面<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;router-view class=&quot;view&quot;&gt;&lt;/router-view&gt;</div></pre></td></tr></table></figure></p>
 <p>路由匹配到的组件将渲染在这里</p>
